@@ -9,10 +9,10 @@ $r=mysqli_query($con, $q);
     $L=$_GET['L'. $valores['id_lista']];
    
    $q="insert into votos (id_lista, id_mesa, voto) values (".$valores['id_lista'] .",". $m. "," .$L.")";
-
+   echo ($q);
    $r2=mysqli_query($con, $q);
 }
  
 
-header("location:../mesa/mesa.php");
+header("location:../mesas/mesa.php");
  ?>
